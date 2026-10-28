@@ -1,0 +1,196 @@
+Matplotlib is building the font cache; this may take a moment.
+dummy argmax: selection macro F1=0.3048, accuracy=0.8424, prediabetes recall=0.0000
+dummy tuned: selection macro F1=0.3048, accuracy=0.8424, prediabetes recall=0.0000
+logistic_baseline argmax: selection macro F1=0.3932, accuracy=0.8433, prediabetes recall=0.0000
+logistic_baseline tuned: selection macro F1=0.4590, accuracy=0.7989, prediabetes recall=0.0649
+logistic_weighted_C0.1 argmax: selection macro F1=0.4292, accuracy=0.6485, prediabetes recall=0.3247
+logistic_weighted_C0.1 tuned: selection macro F1=0.4549, accuracy=0.7746, prediabetes recall=0.0433
+logistic_weighted_C1 argmax: selection macro F1=0.4292, accuracy=0.6486, prediabetes recall=0.3247
+logistic_weighted_C1 tuned: selection macro F1=0.4550, accuracy=0.7747, prediabetes recall=0.0433
+logistic_weighted_C10 argmax: selection macro F1=0.4292, accuracy=0.6485, prediabetes recall=0.3247
+logistic_weighted_C10 tuned: selection macro F1=0.4550, accuracy=0.7747, prediabetes recall=0.0433
+mlp_baseline Epoch [01/30] Train objective 0.4233 | Validation CE 0.4016 | Macro F1 0.4044
+mlp_baseline Epoch [02/30] Train objective 0.3942 | Validation CE 0.3997 | Macro F1 0.3879
+mlp_baseline Epoch [03/30] Train objective 0.3929 | Validation CE 0.3991 | Macro F1 0.3862
+mlp_baseline Epoch [04/30] Train objective 0.3923 | Validation CE 0.3986 | Macro F1 0.3834
+mlp_baseline Epoch [05/30] Train objective 0.3919 | Validation CE 0.3993 | Macro F1 0.3951
+mlp_baseline Epoch [06/30] Train objective 0.3915 | Validation CE 0.3991 | Macro F1 0.3892
+mlp_baseline Epoch [07/30] Train objective 0.3912 | Validation CE 0.3989 | Macro F1 0.3917
+mlp_baseline Epoch [08/30] Train objective 0.3909 | Validation CE 0.3984 | Macro F1 0.3908
+mlp_baseline Epoch [09/30] Train objective 0.3907 | Validation CE 0.3982 | Macro F1 0.3946
+mlp_baseline Epoch [10/30] Train objective 0.3905 | Validation CE 0.3985 | Macro F1 0.3944
+mlp_baseline Epoch [11/30] Train objective 0.3902 | Validation CE 0.3981 | Macro F1 0.3831
+mlp_baseline Epoch [12/30] Train objective 0.3899 | Validation CE 0.3983 | Macro F1 0.3949
+mlp_baseline Epoch [13/30] Train objective 0.3898 | Validation CE 0.3983 | Macro F1 0.3978
+mlp_baseline Epoch [14/30] Train objective 0.3895 | Validation CE 0.3986 | Macro F1 0.3944
+mlp_baseline Epoch [15/30] Train objective 0.3894 | Validation CE 0.3982 | Macro F1 0.3942
+mlp_baseline Epoch [16/30] Train objective 0.3892 | Validation CE 0.3986 | Macro F1 0.3863
+mlp_baseline Epoch [17/30] Train objective 0.3889 | Validation CE 0.3987 | Macro F1 0.3969
+mlp_baseline Epoch [18/30] Train objective 0.3886 | Validation CE 0.3989 | Macro F1 0.3903
+mlp_baseline Epoch [19/30] Train objective 0.3886 | Validation CE 0.3998 | Macro F1 0.4042
+mlp_baseline Epoch [20/30] Train objective 0.3883 | Validation CE 0.3995 | Macro F1 0.4070
+mlp_baseline Epoch [21/30] Train objective 0.3882 | Validation CE 0.3992 | Macro F1 0.3840
+mlp_baseline Epoch [22/30] Train objective 0.3878 | Validation CE 0.3996 | Macro F1 0.4087
+mlp_baseline Epoch [23/30] Train objective 0.3876 | Validation CE 0.3985 | Macro F1 0.3972
+mlp_baseline Epoch [24/30] Train objective 0.3876 | Validation CE 0.3991 | Macro F1 0.4018
+mlp_baseline Epoch [25/30] Train objective 0.3872 | Validation CE 0.3986 | Macro F1 0.3895
+mlp_baseline Epoch [26/30] Train objective 0.3870 | Validation CE 0.3995 | Macro F1 0.4034
+mlp_baseline Epoch [27/30] Train objective 0.3871 | Validation CE 0.3986 | Macro F1 0.4017
+mlp_baseline Epoch [28/30] Train objective 0.3869 | Validation CE 0.3991 | Macro F1 0.3963
+mlp_baseline Epoch [29/30] Train objective 0.3866 | Validation CE 0.3995 | Macro F1 0.4052
+mlp_baseline Epoch [30/30] Train objective 0.3864 | Validation CE 0.3996 | Macro F1 0.3797
+mlp_baseline argmax: selection macro F1=0.4137, accuracy=0.8471, prediabetes recall=0.0000
+mlp_baseline tuned: selection macro F1=0.4635, accuracy=0.7882, prediabetes recall=0.0866
+mlp_sqrt_weighted Epoch [01/30] Train objective 0.7256 | Validation CE 0.4936 | Macro F1 0.4422
+mlp_sqrt_weighted Epoch [02/30] Train objective 0.7038 | Validation CE 0.4906 | Macro F1 0.4440
+mlp_sqrt_weighted Epoch [03/30] Train objective 0.7014 | Validation CE 0.4924 | Macro F1 0.4456
+mlp_sqrt_weighted Epoch [04/30] Train objective 0.7005 | Validation CE 0.4977 | Macro F1 0.4451
+mlp_sqrt_weighted Epoch [05/30] Train objective 0.6989 | Validation CE 0.4734 | Macro F1 0.4435
+mlp_sqrt_weighted Epoch [06/30] Train objective 0.6981 | Validation CE 0.4809 | Macro F1 0.4437
+mlp_sqrt_weighted Epoch [07/30] Train objective 0.6975 | Validation CE 0.4867 | Macro F1 0.4450
+mlp_sqrt_weighted Epoch [08/30] Train objective 0.6967 | Validation CE 0.4897 | Macro F1 0.4453
+mlp_sqrt_weighted Epoch [09/30] Train objective 0.6963 | Validation CE 0.4773 | Macro F1 0.4450
+mlp_sqrt_weighted Epoch [10/30] Train objective 0.6957 | Validation CE 0.4804 | Macro F1 0.4460
+mlp_sqrt_weighted Epoch [11/30] Train objective 0.6952 | Validation CE 0.4812 | Macro F1 0.4452
+mlp_sqrt_weighted Epoch [12/30] Train objective 0.6943 | Validation CE 0.4748 | Macro F1 0.4441
+mlp_sqrt_weighted Epoch [13/30] Train objective 0.6946 | Validation CE 0.4838 | Macro F1 0.4459
+mlp_sqrt_weighted Epoch [14/30] Train objective 0.6939 | Validation CE 0.4920 | Macro F1 0.4434
+mlp_sqrt_weighted Epoch [15/30] Train objective 0.6939 | Validation CE 0.4838 | Macro F1 0.4448
+mlp_sqrt_weighted Epoch [16/30] Train objective 0.6934 | Validation CE 0.4840 | Macro F1 0.4454
+mlp_sqrt_weighted Epoch [17/30] Train objective 0.6930 | Validation CE 0.4863 | Macro F1 0.4436
+mlp_sqrt_weighted Epoch [18/30] Train objective 0.6926 | Validation CE 0.4865 | Macro F1 0.4444
+mlp_sqrt_weighted Epoch [19/30] Train objective 0.6928 | Validation CE 0.4742 | Macro F1 0.4455
+mlp_sqrt_weighted Epoch [20/30] Train objective 0.6921 | Validation CE 0.4798 | Macro F1 0.4474
+mlp_sqrt_weighted Epoch [21/30] Train objective 0.6919 | Validation CE 0.4901 | Macro F1 0.4444
+mlp_sqrt_weighted Epoch [22/30] Train objective 0.6910 | Validation CE 0.4772 | Macro F1 0.4466
+mlp_sqrt_weighted Epoch [23/30] Train objective 0.6915 | Validation CE 0.4935 | Macro F1 0.4458
+mlp_sqrt_weighted Epoch [24/30] Train objective 0.6915 | Validation CE 0.4881 | Macro F1 0.4462
+mlp_sqrt_weighted Epoch [25/30] Train objective 0.6910 | Validation CE 0.4863 | Macro F1 0.4460
+mlp_sqrt_weighted Epoch [26/30] Train objective 0.6903 | Validation CE 0.4798 | Macro F1 0.4453
+mlp_sqrt_weighted Epoch [27/30] Train objective 0.6896 | Validation CE 0.4886 | Macro F1 0.4469
+mlp_sqrt_weighted Epoch [28/30] Train objective 0.6900 | Validation CE 0.4873 | Macro F1 0.4459
+mlp_sqrt_weighted Epoch [29/30] Train objective 0.6893 | Validation CE 0.4900 | Macro F1 0.4466
+mlp_sqrt_weighted Epoch [30/30] Train objective 0.6891 | Validation CE 0.4838 | Macro F1 0.4449
+mlp_sqrt_weighted argmax: selection macro F1=0.4546, accuracy=0.8188, prediabetes recall=0.0000
+mlp_sqrt_weighted tuned: selection macro F1=0.4728, accuracy=0.8063, prediabetes recall=0.0779
+mlp_balanced Epoch [01/30] Train objective 0.9673 | Validation CE 0.8533 | Macro F1 0.4180
+mlp_balanced Epoch [02/30] Train objective 0.9526 | Validation CE 0.8746 | Macro F1 0.4104
+mlp_balanced Epoch [03/30] Train objective 0.9482 | Validation CE 0.8882 | Macro F1 0.4066
+mlp_balanced Epoch [04/30] Train objective 0.9470 | Validation CE 0.8778 | Macro F1 0.4106
+mlp_balanced Epoch [05/30] Train objective 0.9434 | Validation CE 0.8188 | Macro F1 0.4205
+mlp_balanced Epoch [06/30] Train objective 0.9423 | Validation CE 0.8439 | Macro F1 0.4188
+mlp_balanced Epoch [07/30] Train objective 0.9418 | Validation CE 0.8899 | Macro F1 0.4083
+mlp_balanced Epoch [08/30] Train objective 0.9403 | Validation CE 0.8712 | Macro F1 0.4107
+mlp_balanced Epoch [09/30] Train objective 0.9399 | Validation CE 0.8636 | Macro F1 0.4131
+mlp_balanced Epoch [10/30] Train objective 0.9371 | Validation CE 0.8791 | Macro F1 0.4087
+mlp_balanced Epoch [11/30] Train objective 0.9368 | Validation CE 0.8525 | Macro F1 0.4146
+mlp_balanced Epoch [12/30] Train objective 0.9356 | Validation CE 0.8541 | Macro F1 0.4137
+mlp_balanced Epoch [13/30] Train objective 0.9344 | Validation CE 0.8352 | Macro F1 0.4180
+mlp_balanced Epoch [14/30] Train objective 0.9329 | Validation CE 0.8841 | Macro F1 0.3979
+mlp_balanced Epoch [15/30] Train objective 0.9322 | Validation CE 0.8746 | Macro F1 0.4083
+mlp_balanced Epoch [16/30] Train objective 0.9331 | Validation CE 0.8691 | Macro F1 0.4108
+mlp_balanced Epoch [17/30] Train objective 0.9312 | Validation CE 0.8755 | Macro F1 0.4074
+mlp_balanced Epoch [18/30] Train objective 0.9316 | Validation CE 0.8592 | Macro F1 0.4085
+mlp_balanced Epoch [19/30] Train objective 0.9296 | Validation CE 0.8327 | Macro F1 0.4177
+mlp_balanced Epoch [20/30] Train objective 0.9288 | Validation CE 0.8421 | Macro F1 0.4142
+mlp_balanced Epoch [21/30] Train objective 0.9274 | Validation CE 0.8652 | Macro F1 0.4092
+mlp_balanced Epoch [22/30] Train objective 0.9267 | Validation CE 0.8890 | Macro F1 0.4079
+mlp_balanced Epoch [23/30] Train objective 0.9253 | Validation CE 0.8983 | Macro F1 0.3979
+mlp_balanced Epoch [24/30] Train objective 0.9250 | Validation CE 0.8684 | Macro F1 0.4064
+mlp_balanced Epoch [25/30] Train objective 0.9247 | Validation CE 0.8594 | Macro F1 0.4080
+mlp_balanced Epoch [26/30] Train objective 0.9235 | Validation CE 0.8627 | Macro F1 0.4074
+mlp_balanced Epoch [27/30] Train objective 0.9230 | Validation CE 0.8527 | Macro F1 0.4110
+mlp_balanced Epoch [28/30] Train objective 0.9239 | Validation CE 0.8559 | Macro F1 0.4105
+mlp_balanced Epoch [29/30] Train objective 0.9213 | Validation CE 0.8605 | Macro F1 0.4086
+mlp_balanced Epoch [30/30] Train objective 0.9185 | Validation CE 0.8252 | Macro F1 0.4154
+mlp_balanced argmax: selection macro F1=0.4275, accuracy=0.6414, prediabetes recall=0.3160
+mlp_balanced tuned: selection macro F1=0.4576, accuracy=0.7835, prediabetes recall=0.0303
+mlp_focal Epoch [01/30] Train objective 0.3043 | Validation CE 0.6408 | Macro F1 0.4436
+mlp_focal Epoch [02/30] Train objective 0.2986 | Validation CE 0.6376 | Macro F1 0.4434
+mlp_focal Epoch [03/30] Train objective 0.2972 | Validation CE 0.6364 | Macro F1 0.4444
+mlp_focal Epoch [04/30] Train objective 0.2965 | Validation CE 0.6528 | Macro F1 0.4435
+mlp_focal Epoch [05/30] Train objective 0.2955 | Validation CE 0.6214 | Macro F1 0.4438
+mlp_focal Epoch [06/30] Train objective 0.2952 | Validation CE 0.6344 | Macro F1 0.4448
+mlp_focal Epoch [07/30] Train objective 0.2948 | Validation CE 0.6215 | Macro F1 0.4447
+mlp_focal Epoch [08/30] Train objective 0.2941 | Validation CE 0.6355 | Macro F1 0.4453
+mlp_focal Epoch [09/30] Train objective 0.2937 | Validation CE 0.6270 | Macro F1 0.4464
+mlp_focal Epoch [10/30] Train objective 0.2932 | Validation CE 0.6231 | Macro F1 0.4440
+mlp_focal Epoch [11/30] Train objective 0.2928 | Validation CE 0.6305 | Macro F1 0.4441
+mlp_focal Epoch [12/30] Train objective 0.2922 | Validation CE 0.6203 | Macro F1 0.4446
+mlp_focal Epoch [13/30] Train objective 0.2922 | Validation CE 0.6399 | Macro F1 0.4445
+mlp_focal Epoch [14/30] Train objective 0.2912 | Validation CE 0.6464 | Macro F1 0.4458
+mlp_focal Epoch [15/30] Train objective 0.2908 | Validation CE 0.6302 | Macro F1 0.4451
+mlp_focal Epoch [16/30] Train objective 0.2906 | Validation CE 0.6286 | Macro F1 0.4460
+mlp_focal Epoch [17/30] Train objective 0.2900 | Validation CE 0.6449 | Macro F1 0.4458
+mlp_focal Epoch [18/30] Train objective 0.2896 | Validation CE 0.6302 | Macro F1 0.4441
+mlp_focal Epoch [19/30] Train objective 0.2893 | Validation CE 0.6194 | Macro F1 0.4416
+mlp_focal Epoch [20/30] Train objective 0.2886 | Validation CE 0.6320 | Macro F1 0.4449
+mlp_focal Epoch [21/30] Train objective 0.2872 | Validation CE 0.6427 | Macro F1 0.4446
+mlp_focal Epoch [22/30] Train objective 0.2874 | Validation CE 0.6222 | Macro F1 0.4467
+mlp_focal Epoch [23/30] Train objective 0.2866 | Validation CE 0.6509 | Macro F1 0.4465
+mlp_focal Epoch [24/30] Train objective 0.2871 | Validation CE 0.6391 | Macro F1 0.4451
+mlp_focal Epoch [25/30] Train objective 0.2860 | Validation CE 0.6399 | Macro F1 0.4488
+mlp_focal Epoch [26/30] Train objective 0.2856 | Validation CE 0.6254 | Macro F1 0.4486
+mlp_focal Epoch [27/30] Train objective 0.2852 | Validation CE 0.6346 | Macro F1 0.4432
+mlp_focal Epoch [28/30] Train objective 0.2857 | Validation CE 0.6390 | Macro F1 0.4449
+mlp_focal Epoch [29/30] Train objective 0.2846 | Validation CE 0.6323 | Macro F1 0.4486
+mlp_focal Epoch [30/30] Train objective 0.2835 | Validation CE 0.6378 | Macro F1 0.4454
+mlp_focal argmax: selection macro F1=0.4553, accuracy=0.8257, prediabetes recall=0.0043
+mlp_focal tuned: selection macro F1=0.4542, accuracy=0.8068, prediabetes recall=0.0563
+hist_gradient_weight0 argmax: selection macro F1=0.3957, accuracy=0.8478, prediabetes recall=0.0000
+hist_gradient_weight0 tuned: selection macro F1=0.4675, accuracy=0.7909, prediabetes recall=0.1039
+hist_gradient_weight0.5 argmax: selection macro F1=0.4534, accuracy=0.8208, prediabetes recall=0.0000
+hist_gradient_weight0.5 tuned: selection macro F1=0.4653, accuracy=0.8032, prediabetes recall=0.0736
+hist_gradient_weight1 argmax: selection macro F1=0.4164, accuracy=0.6164, prediabetes recall=0.3160
+hist_gradient_weight1 tuned: selection macro F1=0.4591, accuracy=0.7702, prediabetes recall=0.0563
+0:	learn: 0.3048217	test: 0.3048198	best: 0.3048198 (0)	total: 80.4ms	remaining: 1m 12s
+150:	learn: 0.4008656	test: 0.3973504	best: 0.3976066 (149)	total: 2.76s	remaining: 13.7s
+Stopped by overfitting detector  (100 iterations wait)
+
+bestTest = 0.3981732735
+bestIteration = 166
+
+Shrink model to first 167 iterations.
+catboost_depth5_weight0 argmax: selection macro F1=0.3983, accuracy=0.8478, prediabetes recall=0.0000
+catboost_depth5_weight0 tuned: selection macro F1=0.4668, accuracy=0.8047, prediabetes recall=0.0563
+0:	learn: 0.4428753	test: 0.4369766	best: 0.4369766 (0)	total: 21.3ms	remaining: 19.2s
+150:	learn: 0.4558186	test: 0.4475947	best: 0.4478022 (128)	total: 3.19s	remaining: 15.8s
+Stopped by overfitting detector  (100 iterations wait)
+
+bestTest = 0.4487399927
+bestIteration = 187
+
+Shrink model to first 188 iterations.
+catboost_depth6_weight0.5 argmax: selection macro F1=0.4549, accuracy=0.8215, prediabetes recall=0.0000
+catboost_depth6_weight0.5 tuned: selection macro F1=0.4703, accuracy=0.8072, prediabetes recall=0.0823
+0:	learn: 0.4446655	test: 0.4379832	best: 0.4379832 (0)	total: 84.7ms	remaining: 1m 16s
+150:	learn: 0.4555990	test: 0.4464284	best: 0.4477790 (102)	total: 7.69s	remaining: 38.1s
+Stopped by overfitting detector  (100 iterations wait)
+
+bestTest = 0.4477790187
+bestIteration = 102
+
+Shrink model to first 103 iterations.
+catboost_depth7_weight0.5 argmax: selection macro F1=0.4541, accuracy=0.8243, prediabetes recall=0.0000
+catboost_depth7_weight0.5 tuned: selection macro F1=0.4674, accuracy=0.7812, prediabetes recall=0.1082
+0:	learn: 0.4097249	test: 0.4052533	best: 0.4052533 (0)	total: 21.7ms	remaining: 19.5s
+Stopped by overfitting detector  (100 iterations wait)
+
+bestTest = 0.4183192726
+bestIteration = 36
+
+Shrink model to first 37 iterations.
+catboost_depth6_weight1 argmax: selection macro F1=0.4188, accuracy=0.6253, prediabetes recall=0.2727
+catboost_depth6_weight1 tuned: selection macro F1=0.4604, accuracy=0.7742, prediabetes recall=0.0909
+ensemble_trees: tuned selection macro F1=0.4690
+ensemble_trees_mlp: tuned selection macro F1=0.4669
+SELECTION FROZEN: {'label': 'champion', 'model': 'mlp_sqrt_weighted', 'decision': 'tuned', 'offsets': [0.0, 1.0, 0.0], 'selection_macro_f1': 0.4727951059448137}
+TEST dummy: {'accuracy': 0.842439293598234, 'balanced_accuracy': 0.3333333333333333, 'macro_f1': 0.3048275173481104, 'prediabetes_recall': 0.0, 'prediabetes_precision': 0.0, 'diabetes_recall': 0.0}
+TEST logistic_baseline: {'accuracy': 0.847524440239672, 'balanced_accuracy': 0.38376089045029443, 'macro_f1': 0.39298997390700063, 'prediabetes_recall': 0.0, 'prediabetes_precision': 0.0, 'diabetes_recall': 0.17402376910016978}
+TEST mlp_baseline: {'accuracy': 0.848155156102176, 'balanced_accuracy': 0.4003063934468209, 'macro_f1': 0.41279748691625623, 'prediabetes_recall': 0.0, 'prediabetes_precision': 0.0, 'diabetes_recall': 0.23259762308998302}
+TEST best_weighted_logistic: {'accuracy': 0.7778697571743929, 'balanced_accuracy': 0.4912243987463933, 'macro_f1': 0.455590038276527, 'prediabetes_recall': 0.03455723542116631, 'prediabetes_precision': 0.04177545691906005, 'diabetes_recall': 0.6188455008488964}
+TEST best_improved_mlp: {'accuracy': 0.8052270577105014, 'balanced_accuracy': 0.480817915745589, 'macro_f1': 0.4674896193063904, 'prediabetes_recall': 0.06263498920086392, 'prediabetes_precision': 0.04420731707317073, 'diabetes_recall': 0.5096208262591964}
+TEST best_boosted_tree: {'accuracy': 0.8102333648691264, 'balanced_accuracy': 0.480586162340969, 'macro_f1': 0.46991984296588135, 'prediabetes_recall': 0.06695464362850972, 'prediabetes_precision': 0.04791344667697063, 'diabetes_recall': 0.4966044142614601}
+TEST champion: {'accuracy': 0.8052270577105014, 'balanced_accuracy': 0.480817915745589, 'macro_f1': 0.4674896193063904, 'prediabetes_recall': 0.06263498920086392, 'prediabetes_precision': 0.04420731707317073, 'diabetes_recall': 0.5096208262591964}
+TEST champion_argmax_ablation: {'accuracy': 0.8196941028066856, 'balanced_accuracy': 0.47390989263077005, 'macro_f1': 0.4552370413617349, 'prediabetes_recall': 0.0, 'prediabetes_precision': 0.0, 'diabetes_recall': 0.5376344086021505}
+Completed in 1.8 minutes

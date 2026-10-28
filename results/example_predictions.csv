@@ -1,0 +1,6 @@
+predicted_class,predicted_label,raw_score_class_0,raw_score_class_1,raw_score_class_2
+0,No Diabetes,0.50191844,0.09176178,0.40631977
+0,No Diabetes,0.88815784,0.082751505,0.02909068
+1,Prediabetes,0.3739509,0.17462984,0.4514193
+0,No Diabetes,0.98734504,0.0071391105,0.005515769
+0,No Diabetes,0.48536322,0.09518833,0.4194484

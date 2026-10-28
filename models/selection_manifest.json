@@ -1,0 +1,132 @@
+{
+  "frozen_at_utc": "2026-10-28T14:53:30.067498+00:00",
+  "selection_metric": "macro_f1",
+  "tie_breaker": "balanced_accuracy",
+  "champion": {
+    "label": "champion",
+    "model": "mlp_sqrt_weighted",
+    "decision": "tuned",
+    "offsets": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "selection_macro_f1": 0.4727951059448137
+  },
+  "finalists": [
+    {
+      "label": "dummy",
+      "model": "dummy",
+      "decision": "argmax",
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selection_macro_f1": 0.3048197754860428
+    },
+    {
+      "label": "logistic_baseline",
+      "model": "logistic_baseline",
+      "decision": "argmax",
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selection_macro_f1": 0.3931994563827515
+    },
+    {
+      "label": "mlp_baseline",
+      "model": "mlp_baseline",
+      "decision": "argmax",
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selection_macro_f1": 0.41373714483457813
+    },
+    {
+      "label": "best_weighted_logistic",
+      "model": "logistic_weighted_C1",
+      "decision": "tuned",
+      "offsets": [
+        0.0,
+        -0.75,
+        -0.5
+      ],
+      "selection_macro_f1": 0.45500751570780046
+    },
+    {
+      "label": "best_improved_mlp",
+      "model": "mlp_sqrt_weighted",
+      "decision": "tuned",
+      "offsets": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "selection_macro_f1": 0.4727951059448137
+    },
+    {
+      "label": "best_boosted_tree",
+      "model": "catboost_depth6_weight0.5",
+      "decision": "tuned",
+      "offsets": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "selection_macro_f1": 0.47030220726884703
+    },
+    {
+      "label": "champion",
+      "model": "mlp_sqrt_weighted",
+      "decision": "tuned",
+      "offsets": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "selection_macro_f1": 0.4727951059448137
+    },
+    {
+      "label": "champion_argmax_ablation",
+      "model": "mlp_sqrt_weighted",
+      "decision": "argmax",
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selection_macro_f1": 0.45463862676612865
+    }
+  ],
+  "features": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "GenHlth",
+    "MentHlth",
+    "PhysHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "seed": 42,
+  "test_used_for_selection": false,
+  "source_sha256": "a971809d0786d2d7d7f6070f83dfe8af9d860ea33a79e0e2701c8a49f78f9861"
+}

@@ -1,0 +1,17 @@
+{
+  "completed_at_utc": "2026-10-28T14:53:34.489023+00:00",
+  "elapsed_seconds": 110.05601501464844,
+  "candidate_model_count": 18,
+  "decision_variants": 36,
+  "champion": {
+    "label": "champion",
+    "model": "mlp_sqrt_weighted",
+    "decision": "tuned",
+    "offsets": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "selection_macro_f1": 0.4727951059448137
+  }
+}

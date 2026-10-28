@@ -1,0 +1,332 @@
+{
+  "dummy": {
+    "kind": "tree",
+    "config": {
+      "strategy": "most_frequent"
+    },
+    "fit_seconds": 0,
+    "file": "dummy.joblib"
+  },
+  "logistic_baseline": {
+    "kind": "linear",
+    "config": {
+      "C": 1.0,
+      "class_weight": null,
+      "max_iter": 1500,
+      "solver": "lbfgs"
+    },
+    "fit_seconds": 0.392315149307251,
+    "file": "logistic_baseline.joblib"
+  },
+  "logistic_weighted_C0.1": {
+    "kind": "linear",
+    "config": {
+      "C": 0.1,
+      "class_weight": "balanced",
+      "max_iter": 1500,
+      "solver": "lbfgs"
+    },
+    "fit_seconds": 0.3922100067138672,
+    "file": "logistic_weighted_C0.1.joblib"
+  },
+  "logistic_weighted_C1": {
+    "kind": "linear",
+    "config": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "max_iter": 1500,
+      "solver": "lbfgs"
+    },
+    "fit_seconds": 0.32193994522094727,
+    "file": "logistic_weighted_C1.joblib"
+  },
+  "logistic_weighted_C10": {
+    "kind": "linear",
+    "config": {
+      "C": 10.0,
+      "class_weight": "balanced",
+      "max_iter": 1500,
+      "solver": "lbfgs"
+    },
+    "fit_seconds": 0.41127610206604004,
+    "file": "logistic_weighted_C10.joblib"
+  },
+  "mlp_baseline": {
+    "kind": "torch",
+    "config": {
+      "name": "mlp_baseline",
+      "hidden": [
+        64,
+        32
+      ],
+      "lr": 0.001,
+      "epochs": 30,
+      "batch_size": 256,
+      "best_epoch": 22,
+      "tuning_macro_f1_at_checkpoint": 0.4087229866728778,
+      "class_weights": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "device": "cpu"
+    },
+    "fit_seconds": 12.472474098205566,
+    "file": "mlp_baseline.pt"
+  },
+  "mlp_sqrt_weighted": {
+    "kind": "torch",
+    "config": {
+      "name": "mlp_sqrt_weighted",
+      "hidden": [
+        64,
+        32
+      ],
+      "lr": 0.001,
+      "epochs": 30,
+      "batch_size": 256,
+      "class_weight_power": 0.5,
+      "dropout": 0.1,
+      "weight_decay": 0.0001,
+      "best_epoch": 20,
+      "tuning_macro_f1_at_checkpoint": 0.4473581276054787,
+      "class_weights": [
+        0.7639272809028625,
+        5.189287185668945,
+        1.8783873319625854
+      ],
+      "device": "cpu"
+    },
+    "fit_seconds": 14.691181182861328,
+    "file": "mlp_sqrt_weighted.pt"
+  },
+  "mlp_balanced": {
+    "kind": "torch",
+    "config": {
+      "name": "mlp_balanced",
+      "hidden": [
+        128,
+        64
+      ],
+      "lr": 0.0005,
+      "epochs": 30,
+      "batch_size": 256,
+      "class_weight_power": 1.0,
+      "dropout": 0.2,
+      "weight_decay": 0.001,
+      "best_epoch": 5,
+      "tuning_macro_f1_at_checkpoint": 0.4204520005631644,
+      "class_weights": [
+        0.39569026231765747,
+        18.258569717407227,
+        2.3923330307006836
+      ],
+      "device": "cpu"
+    },
+    "fit_seconds": 18.242491960525513,
+    "file": "mlp_balanced.pt"
+  },
+  "mlp_focal": {
+    "kind": "torch",
+    "config": {
+      "name": "mlp_focal",
+      "hidden": [
+        128,
+        64
+      ],
+      "lr": 0.001,
+      "epochs": 30,
+      "batch_size": 256,
+      "class_weight_power": 0.5,
+      "dropout": 0.15,
+      "weight_decay": 0.0001,
+      "focal_gamma": 2.0,
+      "best_epoch": 25,
+      "tuning_macro_f1_at_checkpoint": 0.4488032657784251,
+      "class_weights": [
+        0.7639272809028625,
+        5.189287185668945,
+        1.8783873319625854
+      ],
+      "device": "cpu"
+    },
+    "fit_seconds": 19.872260808944702,
+    "file": "mlp_focal.pt"
+  },
+  "hist_gradient_weight0": {
+    "kind": "tree",
+    "config": {
+      "max_iter": 300,
+      "learning_rate": 0.06,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 5.0,
+      "early_stopping": true,
+      "validation_fraction": 0.1,
+      "random_state": 42,
+      "class_weight_power": 0.0,
+      "actual_iterations": 116
+    },
+    "fit_seconds": 3.408728837966919,
+    "file": "hist_gradient_weight0.joblib"
+  },
+  "hist_gradient_weight0.5": {
+    "kind": "tree",
+    "config": {
+      "max_iter": 300,
+      "learning_rate": 0.06,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 5.0,
+      "early_stopping": true,
+      "validation_fraction": 0.1,
+      "random_state": 42,
+      "class_weight_power": 0.5,
+      "actual_iterations": 105
+    },
+    "fit_seconds": 3.0666089057922363,
+    "file": "hist_gradient_weight0.5.joblib"
+  },
+  "hist_gradient_weight1": {
+    "kind": "tree",
+    "config": {
+      "max_iter": 300,
+      "learning_rate": 0.06,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 5.0,
+      "early_stopping": true,
+      "validation_fraction": 0.1,
+      "random_state": 42,
+      "class_weight_power": 1.0,
+      "actual_iterations": 80
+    },
+    "fit_seconds": 2.4580159187316895,
+    "file": "hist_gradient_weight1.joblib"
+  },
+  "catboost_depth5_weight0": {
+    "kind": "tree",
+    "config": {
+      "depth": 5,
+      "class_weight_power": 0.0,
+      "learning_rate": 0.06,
+      "iterations": 900,
+      "l2_leaf_reg": 5.0,
+      "random_seed": 42,
+      "loss_function": "MultiClass",
+      "eval_metric": "TotalF1:average=Macro;use_weights=false",
+      "class_weights": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "thread_count": 4,
+      "allow_writing_files": false,
+      "verbose": 150,
+      "early_stopping_rounds": 100,
+      "best_iteration": 166
+    },
+    "fit_seconds": 4.908315896987915,
+    "file": "catboost_depth5_weight0.joblib"
+  },
+  "catboost_depth6_weight0.5": {
+    "kind": "tree",
+    "config": {
+      "depth": 6,
+      "class_weight_power": 0.5,
+      "learning_rate": 0.06,
+      "iterations": 900,
+      "l2_leaf_reg": 5.0,
+      "random_seed": 42,
+      "loss_function": "MultiClass",
+      "eval_metric": "TotalF1:average=Macro;use_weights=false",
+      "class_weights": [
+        0.629039164402723,
+        4.273004739135538,
+        1.5467168426952531
+      ],
+      "thread_count": 4,
+      "allow_writing_files": false,
+      "verbose": 150,
+      "early_stopping_rounds": 100,
+      "best_iteration": 187
+    },
+    "fit_seconds": 6.206248760223389,
+    "file": "catboost_depth6_weight0.5.joblib"
+  },
+  "catboost_depth7_weight0.5": {
+    "kind": "tree",
+    "config": {
+      "depth": 7,
+      "class_weight_power": 0.5,
+      "learning_rate": 0.04,
+      "iterations": 900,
+      "l2_leaf_reg": 5.0,
+      "random_seed": 42,
+      "loss_function": "MultiClass",
+      "eval_metric": "TotalF1:average=Macro;use_weights=false",
+      "class_weights": [
+        0.629039164402723,
+        4.273004739135538,
+        1.5467168426952531
+      ],
+      "thread_count": 4,
+      "allow_writing_files": false,
+      "verbose": 150,
+      "early_stopping_rounds": 100,
+      "best_iteration": 102
+    },
+    "fit_seconds": 9.569416999816895,
+    "file": "catboost_depth7_weight0.5.joblib"
+  },
+  "catboost_depth6_weight1": {
+    "kind": "tree",
+    "config": {
+      "depth": 6,
+      "class_weight_power": 1.0,
+      "learning_rate": 0.06,
+      "iterations": 900,
+      "l2_leaf_reg": 5.0,
+      "random_seed": 42,
+      "loss_function": "MultiClass",
+      "eval_metric": "TotalF1:average=Macro;use_weights=false",
+      "class_weights": [
+        0.395690270352476,
+        18.258569500674763,
+        2.392332991477172
+      ],
+      "thread_count": 4,
+      "allow_writing_files": false,
+      "verbose": 150,
+      "early_stopping_rounds": 100,
+      "best_iteration": 36
+    },
+    "fit_seconds": 3.8140408992767334,
+    "file": "catboost_depth6_weight1.joblib"
+  },
+  "ensemble_trees": {
+    "kind": "ensemble",
+    "members": [
+      "hist_gradient_weight0.5",
+      "catboost_depth5_weight0",
+      "mlp_sqrt_weighted"
+    ],
+    "weights": [
+      0.5,
+      0.5,
+      0.0
+    ],
+    "fit_seconds": 0
+  },
+  "ensemble_trees_mlp": {
+    "kind": "ensemble",
+    "members": [
+      "hist_gradient_weight0.5",
+      "catboost_depth5_weight0",
+      "mlp_sqrt_weighted"
+    ],
+    "weights": [
+      0.4,
+      0.4,
+      0.2
+    ],
+    "fit_seconds": 0
+  }
+}

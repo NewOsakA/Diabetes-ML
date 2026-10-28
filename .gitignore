@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.DS_Store
+data/raw/*.zip
+data/raw/*.csv
+results/probabilities/
+.env
+.env.*
+!.env.example

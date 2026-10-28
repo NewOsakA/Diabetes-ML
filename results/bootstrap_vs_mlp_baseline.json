@@ -1,0 +1,14 @@
+{
+  "resamples": 2000,
+  "seed": 42,
+  "method": "paired stratified row bootstrap",
+  "macro_f1_delta_95_ci": [
+    0.04671086150023567,
+    0.06303666531585493
+  ],
+  "improved_macro_f1_95_ci": [
+    0.45974104524695497,
+    0.4754255844161829
+  ],
+  "limitation": "Conditional on this split and fitted models; does not capture training-seed, model-selection, survey-design or profile-cluster uncertainty."
+}

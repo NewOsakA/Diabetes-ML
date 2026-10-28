@@ -1,0 +1,8 @@
+{
+  "source_url": "https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset",
+  "download_url": "https://www.kaggle.com/api/v1/datasets/download/alexteboul/diabetes-health-indicators-dataset",
+  "retrieved_at_utc": "2026-10-28T14:47:54.359672+00:00",
+  "filename": "diabetes_012_health_indicators_BRFSS2015.csv",
+  "sha256": "a971809d0786d2d7d7f6070f83dfe8af9d860ea33a79e0e2701c8a49f78f9861",
+  "archive_sha256": "ecbd65727a3b9b730bfd3ba547a181767522f1188fb16077e885945c1030f046"
+}

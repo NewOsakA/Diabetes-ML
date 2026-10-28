@@ -1,0 +1,13 @@
+split,class,count,total
+train,0,170962,202944
+train,1,3705,202944
+train,2,28277,202944
+tuning,0,10685,12684
+tuning,1,232,12684
+tuning,2,1767,12684
+selection,0,10685,12684
+selection,1,231,12684
+selection,2,1768,12684
+test,0,21371,25368
+test,1,463,25368
+test,2,3534,25368

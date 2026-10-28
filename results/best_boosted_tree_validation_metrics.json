@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.805029959003469,
+  "balanced_accuracy": 0.4787813613776603,
+  "macro_f1": 0.4673806625904287,
+  "prediabetes_recall": 0.08207343412526998,
+  "prediabetes_precision": 0.05337078651685393,
+  "diabetes_recall": 0.47977369165487976
+}
