@@ -1,0 +1,169 @@
+START OUTER FOLD 1/3
+outer0 inner 1/2 fixed_plain_mlp: 4.3s
+outer0 inner 1/2 fixed_weighted_mlp: 4.7s
+outer0 inner 1/2 mlp_small_p025: 2.8s
+outer0 inner 1/2 mlp_regularized_p075: 3.1s
+outer0 inner 1/2 mlp_wide_p1: 4.0s
+outer0 inner 1/2 mlp_focal_g1: 3.3s
+outer0 inner 1/2 mlp_focal_g2: 4.2s
+outer0 inner 1/2 mlp_balanced_sampling: 3.2s
+outer0 inner 1/2 mlp_random_oversampling: 4.1s
+outer0 inner 1/2 mlp_smotenc: 5.7s
+outer0 inner 1/2 catboost_0: 1.0s
+outer0 inner 1/2 catboost_1: 1.8s
+outer0 inner 1/2 catboost_2: 1.8s
+outer0 inner 1/2 catboost_3: 2.3s
+outer0 inner 1/2 catboost_4: 1.5s
+outer0 inner 1/2 catboost_5: 4.1s
+outer0 inner 1/2 catboost_6: 1.4s
+outer0 inner 1/2 catboost_7: 3.5s
+outer0 inner 2/2 fixed_plain_mlp: 3.5s
+outer0 inner 2/2 fixed_weighted_mlp: 4.3s
+outer0 inner 2/2 mlp_small_p025: 2.8s
+outer0 inner 2/2 mlp_regularized_p075: 3.0s
+outer0 inner 2/2 mlp_wide_p1: 3.7s
+outer0 inner 2/2 mlp_focal_g1: 3.4s
+outer0 inner 2/2 mlp_focal_g2: 4.0s
+outer0 inner 2/2 mlp_balanced_sampling: 3.2s
+outer0 inner 2/2 mlp_random_oversampling: 3.4s
+outer0 inner 2/2 mlp_smotenc: 5.5s
+outer0 inner 2/2 catboost_0: 0.8s
+outer0 inner 2/2 catboost_1: 2.1s
+outer0 inner 2/2 catboost_2: 2.3s
+outer0 inner 2/2 catboost_3: 2.8s
+outer0 inner 2/2 catboost_4: 1.2s
+outer0 inner 2/2 catboost_5: 2.2s
+outer0 inner 2/2 catboost_6: 1.6s
+outer0 inner 2/2 catboost_7: 4.5s
+OUTER 1 fixed_plain_mlp: macroF1=0.4147, pre recall=0.000, precision=0.000
+OUTER 1 fixed_weighted_mlp: macroF1=0.4604, pre recall=0.036, precision=0.043
+OUTER 1 selected_mlp: macroF1=0.4587, pre recall=0.129, precision=0.037
+OUTER 1 selected_catboost: macroF1=0.4626, pre recall=0.050, precision=0.039
+OUTER 1 prediabetes_focused: macroF1=0.4059, pre recall=0.047, precision=0.040
+OUTER 1 selected_overall: macroF1=0.4626, pre recall=0.050, precision=0.039
+START OUTER FOLD 2/3
+outer1 inner 1/2 fixed_plain_mlp: 3.5s
+outer1 inner 1/2 fixed_weighted_mlp: 4.2s
+outer1 inner 1/2 mlp_small_p025: 2.9s
+outer1 inner 1/2 mlp_regularized_p075: 3.0s
+outer1 inner 1/2 mlp_wide_p1: 3.8s
+outer1 inner 1/2 mlp_focal_g1: 3.3s
+outer1 inner 1/2 mlp_focal_g2: 3.7s
+outer1 inner 1/2 mlp_balanced_sampling: 3.1s
+outer1 inner 1/2 mlp_random_oversampling: 3.8s
+outer1 inner 1/2 mlp_smotenc: 5.5s
+outer1 inner 1/2 catboost_0: 2.0s
+outer1 inner 1/2 catboost_1: 1.8s
+outer1 inner 1/2 catboost_2: 2.8s
+outer1 inner 1/2 catboost_3: 1.4s
+outer1 inner 1/2 catboost_4: 1.8s
+outer1 inner 1/2 catboost_5: 1.7s
+outer1 inner 1/2 catboost_6: 2.1s
+outer1 inner 1/2 catboost_7: 3.5s
+outer1 inner 2/2 fixed_plain_mlp: 3.4s
+outer1 inner 2/2 fixed_weighted_mlp: 4.6s
+outer1 inner 2/2 mlp_small_p025: 2.8s
+outer1 inner 2/2 mlp_regularized_p075: 3.2s
+outer1 inner 2/2 mlp_wide_p1: 5.2s
+outer1 inner 2/2 mlp_focal_g1: 5.5s
+outer1 inner 2/2 mlp_focal_g2: 4.4s
+outer1 inner 2/2 mlp_balanced_sampling: 3.2s
+outer1 inner 2/2 mlp_random_oversampling: 3.3s
+outer1 inner 2/2 mlp_smotenc: 6.3s
+outer1 inner 2/2 catboost_0: 1.2s
+outer1 inner 2/2 catboost_1: 2.1s
+outer1 inner 2/2 catboost_2: 2.6s
+outer1 inner 2/2 catboost_3: 3.3s
+outer1 inner 2/2 catboost_4: 1.6s
+outer1 inner 2/2 catboost_5: 3.0s
+outer1 inner 2/2 catboost_6: 2.1s
+outer1 inner 2/2 catboost_7: 2.6s
+OUTER 2 fixed_plain_mlp: macroF1=0.4170, pre recall=0.000, precision=0.000
+OUTER 2 fixed_weighted_mlp: macroF1=0.4640, pre recall=0.045, precision=0.038
+OUTER 2 selected_mlp: macroF1=0.4650, pre recall=0.050, precision=0.045
+OUTER 2 selected_catboost: macroF1=0.4653, pre recall=0.044, precision=0.046
+OUTER 2 prediabetes_focused: macroF1=0.4043, pre recall=0.058, precision=0.042
+OUTER 2 selected_overall: macroF1=0.4653, pre recall=0.044, precision=0.046
+START OUTER FOLD 3/3
+outer2 inner 1/2 fixed_plain_mlp: 3.5s
+outer2 inner 1/2 fixed_weighted_mlp: 4.3s
+outer2 inner 1/2 mlp_small_p025: 2.7s
+outer2 inner 1/2 mlp_regularized_p075: 3.1s
+outer2 inner 1/2 mlp_wide_p1: 4.5s
+outer2 inner 1/2 mlp_focal_g1: 3.0s
+outer2 inner 1/2 mlp_focal_g2: 3.9s
+outer2 inner 1/2 mlp_balanced_sampling: 3.1s
+outer2 inner 1/2 mlp_random_oversampling: 3.3s
+outer2 inner 1/2 mlp_smotenc: 5.7s
+outer2 inner 1/2 catboost_0: 2.5s
+outer2 inner 1/2 catboost_1: 2.7s
+outer2 inner 1/2 catboost_2: 1.9s
+outer2 inner 1/2 catboost_3: 2.6s
+outer2 inner 1/2 catboost_4: 1.6s
+outer2 inner 1/2 catboost_5: 3.2s
+outer2 inner 1/2 catboost_6: 1.2s
+outer2 inner 1/2 catboost_7: 0.9s
+outer2 inner 2/2 fixed_plain_mlp: 3.7s
+outer2 inner 2/2 fixed_weighted_mlp: 4.3s
+outer2 inner 2/2 mlp_small_p025: 2.8s
+outer2 inner 2/2 mlp_regularized_p075: 3.3s
+outer2 inner 2/2 mlp_wide_p1: 3.8s
+outer2 inner 2/2 mlp_focal_g1: 3.1s
+outer2 inner 2/2 mlp_focal_g2: 3.8s
+outer2 inner 2/2 mlp_balanced_sampling: 3.0s
+outer2 inner 2/2 mlp_random_oversampling: 3.5s
+outer2 inner 2/2 mlp_smotenc: 5.6s
+outer2 inner 2/2 catboost_0: 2.0s
+outer2 inner 2/2 catboost_1: 2.0s
+outer2 inner 2/2 catboost_2: 2.1s
+outer2 inner 2/2 catboost_3: 2.2s
+outer2 inner 2/2 catboost_4: 2.1s
+outer2 inner 2/2 catboost_5: 2.2s
+outer2 inner 2/2 catboost_6: 1.4s
+outer2 inner 2/2 catboost_7: 3.1s
+OUTER 3 fixed_plain_mlp: macroF1=0.4157, pre recall=0.000, precision=0.000
+OUTER 3 fixed_weighted_mlp: macroF1=0.4620, pre recall=0.045, precision=0.035
+OUTER 3 selected_mlp: macroF1=0.4664, pre recall=0.132, precision=0.044
+OUTER 3 selected_catboost: macroF1=0.4675, pre recall=0.056, precision=0.048
+OUTER 3 prediabetes_focused: macroF1=0.4577, pre recall=0.014, precision=0.043
+OUTER 3 selected_overall: macroF1=0.4664, pre recall=0.132, precision=0.044
+GROUPED FOLD 1: macroF1=0.4710
+GROUPED FOLD 2: macroF1=0.4600
+GROUPED FOLD 3: macroF1=0.4608
+final inner 1/2 fixed_plain_mlp: 5.4s
+final inner 1/2 fixed_weighted_mlp: 6.3s
+final inner 1/2 mlp_small_p025: 4.6s
+final inner 1/2 mlp_regularized_p075: 5.3s
+final inner 1/2 mlp_wide_p1: 5.6s
+final inner 1/2 mlp_focal_g1: 4.7s
+final inner 1/2 mlp_focal_g2: 6.3s
+final inner 1/2 mlp_balanced_sampling: 6.2s
+final inner 1/2 mlp_random_oversampling: 4.9s
+final inner 1/2 mlp_smotenc: 8.3s
+final inner 1/2 catboost_0: 2.7s
+final inner 1/2 catboost_1: 2.7s
+final inner 1/2 catboost_2: 4.3s
+final inner 1/2 catboost_3: 2.6s
+final inner 1/2 catboost_4: 2.1s
+final inner 1/2 catboost_5: 2.6s
+final inner 1/2 catboost_6: 1.8s
+final inner 1/2 catboost_7: 5.2s
+final inner 2/2 fixed_plain_mlp: 5.2s
+final inner 2/2 fixed_weighted_mlp: 6.5s
+final inner 2/2 mlp_small_p025: 4.2s
+final inner 2/2 mlp_regularized_p075: 4.7s
+final inner 2/2 mlp_wide_p1: 5.6s
+final inner 2/2 mlp_focal_g1: 4.7s
+final inner 2/2 mlp_focal_g2: 5.7s
+final inner 2/2 mlp_balanced_sampling: 4.7s
+final inner 2/2 mlp_random_oversampling: 5.0s
+final inner 2/2 mlp_smotenc: 8.8s
+final inner 2/2 catboost_0: 2.8s
+final inner 2/2 catboost_1: 2.5s
+final inner 2/2 catboost_2: 4.0s
+final inner 2/2 catboost_3: 2.3s
+final inner 2/2 catboost_4: 2.9s
+final inner 2/2 catboost_5: 2.4s
+final inner 2/2 catboost_6: 2.4s
+final inner 2/2 catboost_7: 4.4s
+Completed v2 in 11.2 minutes

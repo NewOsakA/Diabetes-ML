@@ -13,6 +13,7 @@ filelock==4.2.4
 fonttools==4.68.0
 fsspec==2026.9.0
 graphviz==0.21
+imbalanced-learn==0.14.2
 iniconfig==2.3.1
 ipykernel==7.4.0
 ipython==9.17.1
@@ -59,6 +60,7 @@ scipy==1.18.1
 seaborn==0.13.2
 setuptools==84.2.1
 six==1.17.0
+sklearn-compat==0.1.6
 stack-data==0.6.3
 sympy==1.14.0
 threadpoolctl==3.7.0

@@ -1,0 +1,270 @@
+{
+  "seed": 42,
+  "outer_folds": 3,
+  "inner_folds": 2,
+  "training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "development_rows": 228312,
+  "excluded_historical_test_rows": 25368,
+  "precision_floor": 0.05,
+  "minimum_decision_positive_predictions": 30,
+  "decision_macro_f1_floor": 0.4,
+  "role_ratios": {
+    "fit": 0.7,
+    "stopping": 0.1,
+    "calibration": 0.1,
+    "decision": 0.1
+  },
+  "candidates": [
+    {
+      "kind": "mlp",
+      "hidden": [
+        64,
+        32
+      ],
+      "lr": 0.001,
+      "dropout": 0.0,
+      "weight_decay": 0.0,
+      "epochs": 30,
+      "power": 0.0,
+      "sampling": "none",
+      "gamma": 0.0,
+      "name": "fixed_plain_mlp"
+    },
+    {
+      "kind": "mlp",
+      "hidden": [
+        64,
+        32
+      ],
+      "lr": 0.001,
+      "dropout": 0.1,
+      "weight_decay": 0.0001,
+      "epochs": 30,
+      "power": 0.5,
+      "sampling": "none",
+      "gamma": 0.0,
+      "name": "fixed_weighted_mlp"
+    },
+    {
+      "kind": "mlp",
+      "hidden": [
+        32,
+        16
+      ],
+      "lr": 0.001,
+      "dropout": 0.1,
+      "weight_decay": 0.0001,
+      "epochs": 20,
+      "power": 0.25,
+      "sampling": "none",
+      "gamma": 0.0,
+      "name": "mlp_small_p025"
+    },
+    {
+      "kind": "mlp",
+      "hidden": [
+        64,
+        32
+      ],
+      "lr": 0.0005,
+      "dropout": 0.2,
+      "weight_decay": 0.001,
+      "epochs": 20,
+      "power": 0.75,
+      "sampling": "none",
+      "gamma": 0.0,
+      "name": "mlp_regularized_p075"
+    },
+    {
+      "kind": "mlp",
+      "hidden": [
+        128,
+        64
+      ],
+      "lr": 0.0005,
+      "dropout": 0.2,
+      "weight_decay": 0.0001,
+      "epochs": 20,
+      "power": 1.0,
+      "sampling": "none",
+      "gamma": 0.0,
+      "name": "mlp_wide_p1"
+    },
+    {
+      "kind": "mlp",
+      "hidden": [
+        64,
+        32
+      ],
+      "lr": 0.001,
+      "dropout": 0.1,
+      "weight_decay": 0.0001,
+      "epochs": 20,
+      "power": 0.25,
+      "sampling": "none",
+      "gamma": 1.0,
+      "name": "mlp_focal_g1"
+    },
+    {
+      "kind": "mlp",
+      "hidden": [
+        128,
+        64
+      ],
+      "lr": 0.001,
+      "dropout": 0.15,
+      "weight_decay": 0.0001,
+      "epochs": 20,
+      "power": 0.5,
+      "sampling": "none",
+      "gamma": 2.0,
+      "name": "mlp_focal_g2"
+    },
+    {
+      "kind": "mlp",
+      "hidden": [
+        64,
+        32
+      ],
+      "lr": 0.001,
+      "dropout": 0.1,
+      "weight_decay": 0.0001,
+      "epochs": 20,
+      "power": 0.0,
+      "sampling": "balanced",
+      "gamma": 0.0,
+      "name": "mlp_balanced_sampling"
+    },
+    {
+      "kind": "mlp",
+      "hidden": [
+        64,
+        32
+      ],
+      "lr": 0.001,
+      "dropout": 0.1,
+      "weight_decay": 0.0001,
+      "epochs": 20,
+      "power": 0.0,
+      "sampling": "random",
+      "gamma": 0.0,
+      "name": "mlp_random_oversampling"
+    },
+    {
+      "kind": "mlp",
+      "hidden": [
+        64,
+        32
+      ],
+      "lr": 0.001,
+      "dropout": 0.1,
+      "weight_decay": 0.0001,
+      "epochs": 20,
+      "power": 0.0,
+      "sampling": "smotenc",
+      "gamma": 0.0,
+      "name": "mlp_smotenc"
+    },
+    {
+      "name": "catboost_0",
+      "kind": "catboost",
+      "depth": 4,
+      "power": 0.0,
+      "lr": 0.06,
+      "l2": 5,
+      "iterations": 700
+    },
+    {
+      "name": "catboost_1",
+      "kind": "catboost",
+      "depth": 5,
+      "power": 0.25,
+      "lr": 0.1,
+      "l2": 3,
+      "iterations": 700
+    },
+    {
+      "name": "catboost_2",
+      "kind": "catboost",
+      "depth": 6,
+      "power": 0.5,
+      "lr": 0.06,
+      "l2": 5,
+      "iterations": 700
+    },
+    {
+      "name": "catboost_3",
+      "kind": "catboost",
+      "depth": 7,
+      "power": 0.5,
+      "lr": 0.04,
+      "l2": 10,
+      "iterations": 700
+    },
+    {
+      "name": "catboost_4",
+      "kind": "catboost",
+      "depth": 5,
+      "power": 0.75,
+      "lr": 0.06,
+      "l2": 10,
+      "iterations": 700
+    },
+    {
+      "name": "catboost_5",
+      "kind": "catboost",
+      "depth": 6,
+      "power": 1.0,
+      "lr": 0.04,
+      "l2": 5,
+      "iterations": 700
+    },
+    {
+      "name": "catboost_6",
+      "kind": "catboost",
+      "depth": 4,
+      "power": 0.5,
+      "lr": 0.1,
+      "l2": 3,
+      "iterations": 700
+    },
+    {
+      "name": "catboost_7",
+      "kind": "catboost",
+      "depth": 6,
+      "power": 0.25,
+      "lr": 0.03,
+      "l2": 10,
+      "iterations": 700
+    }
+  ],
+  "modes": [
+    "raw_argmax",
+    "raw_macro",
+    "calibrated_argmax",
+    "calibrated_macro",
+    "raw_recall",
+    "calibrated_recall"
+  ],
+  "source_sha256": "a971809d0786d2d7d7f6070f83dfe8af9d860ea33a79e0e2701c8a49f78f9861",
+  "source_code_sha256": {
+    "v2_run.py": "3e3ac6d9bb502e1c0a176a0fa327614b1cce5d8770bc546a5de02cb159309a62",
+    "v2_protocol.py": "530ab764f5357848bd093763906e5d7336d38e89e141343e9283a4bd96417049",
+    "v2_models.py": "cd0dcac1aee1543292d38711a941745120ed9aefc0e7c1ff215251f212beb7a6",
+    "neural.py": "a76f61ca99238a9f83419b9badc5d3e9d2fbc20e3e60a4c655b3501393e1c706",
+    "common.py": "9546532ab25855e37b2fed21823e5c8d07bd577cbb4440dead2d6c4c68468ee7"
+  },
+  "packages": {
+    "numpy": "2.5.4",
+    "torch": "2.14.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "imbalanced-learn": "0.14.2",
+    "scipy": "1.18.1"
+  },
+  "interpretation": "Development-stage nested-CV estimates. Dataset and candidate ideas were previously explored; no new external test set is claimed."
+}

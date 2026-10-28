@@ -1,0 +1,8 @@
+{
+  "development_rows": 228312,
+  "unique_feature_profiles": 206269,
+  "profiles_with_multiple_labels": 1554,
+  "rows_in_conflicting_profiles": 5040,
+  "prediabetes_rows_in_conflicting_profiles": 279,
+  "interpretation": "Identical coarse survey responses can occur for different people; conflicting labels do not by themselves establish annotation errors."
+}

@@ -1,0 +1,6 @@
+predicted_class,predicted_label,score_class_0,score_class_1,score_class_2
+2,Diabetes,0.36362594,0.08950535,0.54686874
+0,No Diabetes,0.82600176,0.066688076,0.10731012
+2,Diabetes,0.3964404,0.10712431,0.4964353
+0,No Diabetes,0.6750378,0.08215334,0.2428089
+0,No Diabetes,0.64416283,0.09855312,0.257284

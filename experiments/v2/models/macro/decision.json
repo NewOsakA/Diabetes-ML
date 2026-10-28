@@ -1,0 +1,35 @@
+{
+  "mode": "raw_macro",
+  "offsets": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "decision_constraint_feasible": true,
+  "features": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "GenHlth",
+    "MentHlth",
+    "PhysHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "kind": "catboost",
+  "name": "catboost_0",
+  "development_only": true
+}

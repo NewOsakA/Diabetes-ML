@@ -1,0 +1,102 @@
+{
+  "verified_at_utc": "2026-10-28T16:11:34.318915+00:00",
+  "repository_visibility": "public",
+  "wiki_enabled": true,
+  "guide_pages": 12,
+  "charts": 6,
+  "flow_diagrams": 5,
+  "anonymous_http_checks": [
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/Limitations-and-Next-Steps",
+      "http_status": 200
+    },
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/How-We-Evaluate",
+      "http_status": 200
+    },
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/FAQ-and-Glossary",
+      "http_status": 200
+    },
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/Experiment-1-Results",
+      "http_status": 200
+    },
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/Understanding-Metrics",
+      "http_status": 200
+    },
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/Training-Techniques",
+      "http_status": 200
+    },
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/Quick-Start",
+      "http_status": 200
+    },
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/How-Models-Learn",
+      "http_status": 200
+    },
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/Home",
+      "http_status": 200
+    },
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/Code-and-Files",
+      "http_status": 200
+    },
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/Dataset-Guide",
+      "http_status": 200
+    },
+    {
+      "url": "https://github.com/NewOsakA/diabetes-ml/wiki/Experiment-2-Results",
+      "http_status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wiki/NewOsakA/diabetes-ml/assets/neural-network.png",
+      "http_status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wiki/NewOsakA/diabetes-ml/assets/precision-versus-recall.png",
+      "http_status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wiki/NewOsakA/diabetes-ml/assets/class-weighting.png",
+      "http_status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wiki/NewOsakA/diabetes-ml/assets/experiment-2-comparison.png",
+      "http_status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wiki/NewOsakA/diabetes-ml/assets/nested-evaluation.png",
+      "http_status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wiki/NewOsakA/diabetes-ml/assets/two-experiments.png",
+      "http_status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wiki/NewOsakA/diabetes-ml/assets/experiment-1-tradeoff.png",
+      "http_status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wiki/NewOsakA/diabetes-ml/assets/class-balance.png",
+      "http_status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wiki/NewOsakA/diabetes-ml/assets/learning-loop.png",
+      "http_status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wiki/NewOsakA/diabetes-ml/assets/evidence-map.png",
+      "http_status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wiki/NewOsakA/diabetes-ml/assets/data-partitions.png",
+      "http_status": 200
+    }
+  ]
+}

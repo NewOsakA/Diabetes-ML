@@ -10,3 +10,5 @@ results/probabilities/
 .env
 .env.*
 !.env.example
+experiments/v2/cache/
+/.wiki-publish/
