@@ -6,6 +6,23 @@ A machine learning study of diabetes status using Alex Teboul's BRFSS 2015 Diabe
 
 The validation-selected weighted MLP achieved **test macro F1 0.4675**, compared with **0.4128** for the local baseline MLP. Diabetes recall improved from **23.3% to 51.0%**; accuracy decreased from **84.8% to 80.5%**. Prediabetes recall was only **6.3%**, with **4.4%** precision. These tradeoffs are documented rather than hidden by overall accuracy.
 
+The `experiment/robust-prediabetes` branch adds a [development-only v2 study](experiments/v2/REPORT.md): nested cross-validation, a broader MLP/CatBoost search, three neural training seeds, class-balanced sampling, random oversampling, SMOTENC, independent probability calibration, and profile/subgroup analyses. Historical test scores and original model artifacts are preserved.
+
+The v2 study uses three outer folds and two inner folds, with separate fit, stopping, calibration and decision portions inside every training partition. A recall-focused procedure tests an experimental 5% prediabetes precision floor; its achieved outer-fold precision is reported rather than assumed. No new external test set is claimed. Install its dependencies with `.venv/bin/python -m pip install -e '.[dev,experiments]'`.
+
+```bash
+# Run once after downloading the raw dataset; allow the full nested search to finish.
+.venv/bin/python -u -m diabetes_ml.v2_run
+.venv/bin/python -m diabetes_ml.v2_report
+# Use the saved development model after the experiment completes.
+.venv/bin/python -m diabetes_ml.v2_predict \
+  --input experiments/v2/example_inputs.csv \
+  --output experiments/v2/example_predictions.csv \
+  --policy macro
+```
+
+The v2 report builder requires the local, Git-ignored `experiments/v2/cache/` evidence created by the experiment. The generated report, executed analysis notebook, metrics, figures and final fitted models are committed for inspection without rerunning training. Completed experiments reject accidental overwrite; `--resume` can reuse inner-fold caches only when the saved protocol and source hashes match.
+
 ## Contents
 
 ```text
@@ -46,7 +63,7 @@ Diabetes ML/
 Clone the repository and set up the Python environment using the instructions below:
 
 ```bash
-git clone https://github.com/NewOsakA/diabetes-ml.git
+git clone --branch experiment/robust-prediabetes https://github.com/NewOsakA/diabetes-ml.git
 cd diabetes-ml
 ```
 
@@ -80,7 +97,7 @@ Saved-model inference works immediately after installation. To run the two data-
 .venv/bin/python -m pytest -q
 ```
 
-Without the raw dataset, the four core tests run and the two data-dependent tests are skipped. With the dataset downloaded, all six tests run. Downloading the data does not retrain models or change saved test results.
+The original experiment has four core tests and two data-dependent integration tests. Without the raw dataset, those integration tests are skipped; downloading it enables all six original checks. The v2 branch adds tests for partition isolation, calibration, sampling, selection and model artifacts. Downloading the data does not retrain models or change saved test results.
 
 ## Run the experiment
 

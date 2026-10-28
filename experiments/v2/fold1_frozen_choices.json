@@ -1,0 +1,86 @@
+{
+  "frozen_at_utc": "2026-10-28T15:38:39.831164+00:00",
+  "choices": {
+    "fixed_plain_mlp": {
+      "name": "fixed_plain_mlp",
+      "mode": "raw_argmax"
+    },
+    "fixed_weighted_mlp": {
+      "name": "fixed_weighted_mlp",
+      "mode": "raw_macro"
+    },
+    "selected_mlp": {
+      "name": "mlp_focal_g1",
+      "kind": "mlp",
+      "mode": "raw_macro",
+      "inner_fold": 0.5,
+      "fit_seconds": 4.398038983345032,
+      "accuracy": 0.7986965205508252,
+      "balanced_accuracy": 0.480599238206771,
+      "macro_f1": 0.46394911409241046,
+      "prediabetes_recall": 0.0597352787316583,
+      "prediabetes_precision": 0.04720896174483646,
+      "diabetes_recall": 0.521501320256507,
+      "prediabetes_ap": 0.031835131877993944,
+      "log_loss": 0.48696450889110565,
+      "brier": 0.2665095019691091,
+      "decision_constraint_feasible": 1.0,
+      "selection_constraint_feasible": true
+    },
+    "selected_catboost": {
+      "name": "catboost_1",
+      "kind": "catboost",
+      "mode": "calibrated_macro",
+      "inner_fold": 0.5,
+      "fit_seconds": 1.9569849967956543,
+      "accuracy": 0.782396457479239,
+      "balanced_accuracy": 0.49197691402246707,
+      "macro_f1": 0.46517066468361223,
+      "prediabetes_recall": 0.1183849464704694,
+      "prediabetes_precision": 0.042250200658677434,
+      "diabetes_recall": 0.5168332704639759,
+      "prediabetes_ap": 0.03620755504142416,
+      "log_loss": 0.39402149683377086,
+      "brier": 0.22087806253258593,
+      "decision_constraint_feasible": 1.0,
+      "selection_constraint_feasible": true
+    },
+    "prediabetes_focused": {
+      "name": "catboost_4",
+      "kind": "catboost",
+      "mode": "calibrated_recall",
+      "inner_fold": 0.5,
+      "fit_seconds": 1.6986621618270874,
+      "accuracy": 0.8267239566908442,
+      "balanced_accuracy": 0.41727931451260586,
+      "macro_f1": 0.4203152598014011,
+      "prediabetes_recall": 0.10544980861962698,
+      "prediabetes_precision": 0.05021283284063482,
+      "diabetes_recall": 0.20044322897019992,
+      "prediabetes_ap": 0.03640219650557225,
+      "log_loss": 0.39449473561368775,
+      "brier": 0.22114314874369645,
+      "decision_constraint_feasible": 1.0,
+      "selection_constraint_feasible": true
+    },
+    "selected_overall": {
+      "name": "catboost_1",
+      "kind": "catboost",
+      "mode": "calibrated_macro",
+      "inner_fold": 0.5,
+      "fit_seconds": 1.9569849967956543,
+      "accuracy": 0.782396457479239,
+      "balanced_accuracy": 0.49197691402246707,
+      "macro_f1": 0.46517066468361223,
+      "prediabetes_recall": 0.1183849464704694,
+      "prediabetes_precision": 0.042250200658677434,
+      "diabetes_recall": 0.5168332704639759,
+      "prediabetes_ap": 0.03620755504142416,
+      "log_loss": 0.39402149683377086,
+      "brier": 0.22087806253258593,
+      "decision_constraint_feasible": 1.0,
+      "selection_constraint_feasible": true
+    }
+  },
+  "outer_evaluation_not_used_for_selection": true
+}

@@ -1,0 +1,35 @@
+{
+  "mode": "raw_recall",
+  "offsets": [
+    0.0,
+    1.5,
+    0.25
+  ],
+  "decision_constraint_feasible": true,
+  "features": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "GenHlth",
+    "MentHlth",
+    "PhysHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "kind": "mlp",
+  "name": "mlp_focal_g1",
+  "development_only": true
+}

@@ -1,0 +1,10 @@
+{
+  "pytest": "14 passed",
+  "notebook_code_cells_executed": 5,
+  "notebook_errors": 0,
+  "historical_test_rows_used_for_v2_training_or_evaluation": 0,
+  "historical_models_and_results": "unchanged",
+  "protocol_source_hashes": "verified",
+  "macro_and_recall_saved_model_inference": "passed",
+  "dependency_check": "passed"
+}

@@ -11,6 +11,7 @@ dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "torch", "catboost",
 
 [project.optional-dependencies]
 dev = ["pytest", "nbformat", "nbclient", "ipykernel"]
+experiments = ["imbalanced-learn>=0.14"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

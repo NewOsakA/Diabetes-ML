@@ -1,0 +1,7 @@
+{
+  "partitions": 75,
+  "all_roles_disjoint_from_evaluation": true,
+  "historical_test_rows_used": 0,
+  "grouped_outer_profile_overlap": 0,
+  "row_id_manifest": "cache/role_row_ids.npz (local intermediate artifact)"
+}
