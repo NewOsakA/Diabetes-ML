@@ -1,4 +1,6 @@
-# Diabetes ML
+# Diabetes-ML
+
+**Python · PyTorch · scikit-learn · CatBoost · Reproducible evaluation**
 
 **New to the project? [Read the visual, beginner-friendly wiki](https://github.com/NewOsakA/diabetes-ml/wiki).** It explains the data, training methods, metrics, both experiments, and how to run the code.
 
@@ -154,3 +156,12 @@ All model comparisons use identical data partitions. For future technique change
 Dataset: [Diabetes Health Indicators](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset). File: `diabetes_012_health_indicators_BRFSS2015.csv`, containing 253,680 rows, 21 inputs and target `Diabetes_012` (0 no diabetes/pregnancy only, 1 prediabetes, 2 diabetes). Only this three-class file is extracted; the downloaded archive also contains binary variants that are not used.
 
 This is an educational research experiment predicting self-reported status in a 2015 survey. It does not predict future onset or provide a diagnosis. No survey weighting, prospective validation, fairness audit or clinical calibration was performed. See the report for the measured limitations and the methodology for technique references.
+
+
+## Project Authorship and Engineering Focus
+
+An educational study by Achirawich Phongpanich ([NewOsakA](https://github.com/NewOsakA)). The repository covers data validation, imbalance-aware model training, evaluation protocols, saved-model inference, and reproducible reports.
+
+The central engineering challenge is comparing models without allowing preprocessing, calibration, or decision tuning to use held-out evaluation data. The project records partition rules and selection procedures in [METHODOLOGY.md](METHODOLOGY.md), alongside [tests](tests) and separate reports for both experiments.
+
+See the [contribution history](https://github.com/NewOsakA/Diabetes-ML/commits?author=NewOsakA). The measured results and limitations above remain the basis for interpreting the study.
