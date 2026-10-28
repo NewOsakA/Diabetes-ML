@@ -40,9 +40,13 @@ Raw Kaggle data are excluded from Git. Two checks require that file and skip if 
 
 It protects the committed completed results from accidental replacement. For a new full run, use another working copy, back up its completed `experiments/v2` directory, and start with a new empty results directory. `--resume` is for interrupted runs with matching code/protocol, not permission to change a completed experiment.
 
-## Does making the repository public merge the experiment branch?
+## Where do I find the latest project and earlier experiments?
 
-No. Repository visibility, branch history and the wiki are separate. Experiment 2 remains on `experiment/robust-prediabetes`. GitHub also stores wiki pages in their own Git repository.
+The default `main` branch contains both completed experiments. Experiment 1 keeps its evidence in `models/` and `results/`; Experiment 2 uses `experiments/v2/`. The commands `diabetes_ml.predict` and `diabetes_ml.v2_predict` load their respective models. Including Experiment 2 does not automatically change the default predictor.
+
+The [`experiment-1`](https://github.com/NewOsakA/diabetes-ml/tree/experiment-1) tag bookmarks the project before integration. The [`experiment-2`](https://github.com/NewOsakA/diabetes-ml/tree/experiment-2) tag bookmarks the integrated project. Future experiments can be developed on branches and merged through pull requests when complete. Tags preserve milestones, while `main` continues to move forward.
+
+Repository visibility and wiki publication are separate from merging code. GitHub stores wiki pages in their own Git repository.
 
 # Glossary
 

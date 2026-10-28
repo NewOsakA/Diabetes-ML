@@ -33,14 +33,16 @@ You do not need to know Python or machine learning to read this wiki. Start with
 
 **Do not directly rank an Experiment 1 test score against an Experiment 2 cross-validation score.** Their evaluation data and procedures differ.
 
-The repository's [main branch](https://github.com/NewOsakA/diabetes-ml) contains Experiment 1. The [experiment/robust-prediabetes branch](https://github.com/NewOsakA/diabetes-ml/tree/experiment/robust-prediabetes) adds Experiment 2. The wiki explains both; publishing it does not merge the branches.
+The repository's [main branch](https://github.com/NewOsakA/diabetes-ml) contains both completed experiments. Each keeps its own reports, results and saved models. The default predictor still uses Experiment 1's selected MLP; Experiment 2 has its own prediction command. See [Quick Start](Quick-Start) to try either one.
+
+For a permanent snapshot, use the [`experiment-1`](https://github.com/NewOsakA/diabetes-ml/tree/experiment-1) tag for the project before integration or [`experiment-2`](https://github.com/NewOsakA/diabetes-ml/tree/experiment-2) for the integrated project. A tag is a bookmark to a particular version.
 
 ## Evidence, not just a summary
 
 - [Experiment 1 technical report](https://github.com/NewOsakA/diabetes-ml/blob/main/results/REPORT.md)
-- [Experiment 2 technical report](https://github.com/NewOsakA/diabetes-ml/blob/experiment/robust-prediabetes/experiments/v2/REPORT.md)
+- [Experiment 2 technical report](https://github.com/NewOsakA/diabetes-ml/blob/main/experiments/v2/REPORT.md)
 - [Executed Experiment 1 notebook](https://github.com/NewOsakA/diabetes-ml/blob/main/notebooks/01_exploration_and_results.ipynb)
-- [Executed Experiment 2 notebook](https://github.com/NewOsakA/diabetes-ml/blob/experiment/robust-prediabetes/experiments/v2/analysis.ipynb)
+- [Executed Experiment 2 notebook](https://github.com/NewOsakA/diabetes-ml/blob/main/experiments/v2/analysis.ipynb)
 - [Dataset by Alex Teboul on Kaggle](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset)
 
 **Next:** [Understand the dataset →](Dataset-Guide)

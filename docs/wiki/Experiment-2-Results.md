@@ -77,6 +77,6 @@ After the outer study, a separate inner search over all development rows selecte
 
 A separate focal-loss MLP was saved for the recall-focused research policy. The final inner-search scores are **selection scores**, not a new final test result. Neither saved artifact should be assumed clinically reliable.
 
-**Evidence:** [fold results](https://github.com/NewOsakA/diabetes-ml/blob/experiment/robust-prediabetes/experiments/v2/outer_results.csv) · [technical report](https://github.com/NewOsakA/diabetes-ml/blob/experiment/robust-prediabetes/experiments/v2/REPORT.md) · [saved model decisions](https://github.com/NewOsakA/diabetes-ml/tree/experiment/robust-prediabetes/experiments/v2/models)
+**Evidence:** [fold results](https://github.com/NewOsakA/diabetes-ml/blob/main/experiments/v2/outer_results.csv) · [technical report](https://github.com/NewOsakA/diabetes-ml/blob/main/experiments/v2/REPORT.md) · [saved model decisions](https://github.com/NewOsakA/diabetes-ml/tree/main/experiments/v2/models)
 
 **Next:** [Run the project yourself →](Quick-Start)

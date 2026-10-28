@@ -1,8 +1,8 @@
 # Maintaining the project wiki
 
-The published guide is at [github.com/NewOsakA/diabetes-ml/wiki](https://github.com/NewOsakA/diabetes-ml/wiki). Its editable Markdown and image source is mirrored in `docs/wiki/` on the experiment branch.
+The published guide is at [github.com/NewOsakA/diabetes-ml/wiki](https://github.com/NewOsakA/diabetes-ml/wiki). Its editable Markdown and image source is mirrored in `docs/wiki/` on `main`.
 
-GitHub stores a wiki in a separate Git repository. Changing these mirrored files does not automatically publish a wiki update. The two scientific experiments also remain on their existing branches; wiki publication does not merge them.
+GitHub stores a wiki in a separate Git repository. Changing these mirrored files does not automatically publish a wiki update. Both completed experiments are integrated on `main`, with separate model artifacts and result folders. The `experiment-1` and `experiment-2` tags preserve milestones. Future experiment branches should be merged through pull requests when their work and documentation are ready; wiki publication is a separate step.
 
 ## Edit and preview
 

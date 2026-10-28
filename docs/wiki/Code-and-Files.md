@@ -7,10 +7,10 @@ You do not need to read every CSV or Python module. Start with the document that
 | Understand the project | [Wiki home](Home) |
 | Understand each input field | [Data dictionary](https://github.com/NewOsakA/diabetes-ml/blob/main/DATA_DICTIONARY.md) |
 | Read Experiment 1's full findings | [Experiment 1 report](https://github.com/NewOsakA/diabetes-ml/blob/main/results/REPORT.md) |
-| Read Experiment 2's full findings | [Experiment 2 report](https://github.com/NewOsakA/diabetes-ml/blob/experiment/robust-prediabetes/experiments/v2/REPORT.md) |
+| Read Experiment 2's full findings | [Experiment 2 report](https://github.com/NewOsakA/diabetes-ml/blob/main/experiments/v2/REPORT.md) |
 | See every Experiment 1 comparison | [Test results CSV](https://github.com/NewOsakA/diabetes-ml/blob/main/results/test_results.csv) |
-| See individual Experiment 2 evaluation folds | [Outer results CSV](https://github.com/NewOsakA/diabetes-ml/blob/experiment/robust-prediabetes/experiments/v2/outer_results.csv) |
-| Check Experiment 2's exact settings | [Protocol JSON](https://github.com/NewOsakA/diabetes-ml/blob/experiment/robust-prediabetes/experiments/v2/protocol.json) |
+| See individual Experiment 2 evaluation folds | [Outer results CSV](https://github.com/NewOsakA/diabetes-ml/blob/main/experiments/v2/outer_results.csv) |
+| Check Experiment 2's exact settings | [Protocol JSON](https://github.com/NewOsakA/diabetes-ml/blob/main/experiments/v2/protocol.json) |
 
 ## A beginner's folder map
 
@@ -42,7 +42,7 @@ A **CSV** is a table. **JSON** stores named settings or records. **NPZ** stores 
 | `v2_predict.py` | Use a saved Experiment 2 policy |
 | `v2_report.py` | Build the Experiment 2 report, figures and notebook from local evidence |
 
-These files are in [src/diabetes_ml on the experiment branch](https://github.com/NewOsakA/diabetes-ml/tree/experiment/robust-prediabetes/src/diabetes_ml).
+These files are in [src/diabetes_ml on main](https://github.com/NewOsakA/diabetes-ml/tree/main/src/diabetes_ml).
 
 ## Which numbers belong to which stage?
 

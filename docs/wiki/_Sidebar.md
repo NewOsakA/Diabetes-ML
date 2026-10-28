@@ -19,4 +19,5 @@
 - [Code and Files](Code-and-Files)
 - [FAQ and Glossary](FAQ-and-Glossary)
 - [Repository](https://github.com/NewOsakA/diabetes-ml)
-- [Experiment branch](https://github.com/NewOsakA/diabetes-ml/tree/experiment/robust-prediabetes)
+- [Experiment 1 snapshot](https://github.com/NewOsakA/diabetes-ml/tree/experiment-1)
+- [Experiment 2 snapshot](https://github.com/NewOsakA/diabetes-ml/tree/experiment-2)

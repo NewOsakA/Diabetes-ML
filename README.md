@@ -8,7 +8,7 @@ A machine learning study of diabetes status using Alex Teboul's BRFSS 2015 Diabe
 
 The validation-selected weighted MLP achieved **test macro F1 0.4675**, compared with **0.4128** for the local baseline MLP. Diabetes recall improved from **23.3% to 51.0%**; accuracy decreased from **84.8% to 80.5%**. Prediabetes recall was only **6.3%**, with **4.4%** precision. These tradeoffs are documented rather than hidden by overall accuracy.
 
-The `experiment/robust-prediabetes` branch adds a [development-only v2 study](experiments/v2/REPORT.md): nested cross-validation, a broader MLP/CatBoost search, three neural training seeds, class-balanced sampling, random oversampling, SMOTENC, independent probability calibration, and profile/subgroup analyses. Historical test scores and original model artifacts are preserved.
+Experiment 2 adds a [development-only v2 study](experiments/v2/REPORT.md): nested cross-validation, a broader MLP/CatBoost search, three neural training seeds, class-balanced sampling, random oversampling, SMOTENC, independent probability calibration, and profile/subgroup analyses. Historical test scores and original model artifacts are preserved.
 
 The v2 study uses three outer folds and two inner folds, with separate fit, stopping, calibration and decision portions inside every training partition. A recall-focused procedure tests an experimental 5% prediabetes precision floor; its achieved outer-fold precision is reported rather than assumed. No new external test set is claimed. Install its dependencies with `.venv/bin/python -m pip install -e '.[dev,experiments]'`.
 
@@ -24,6 +24,21 @@ The v2 study uses three outer folds and two inner folds, with separate fit, stop
 ```
 
 The v2 report builder requires the local, Git-ignored `experiments/v2/cache/` evidence created by the experiment. The generated report, executed analysis notebook, metrics, figures and final fitted models are committed for inspection without rerunning training. Completed experiments reject accidental overwrite; `--resume` can reuse inner-fold caches only when the saved protocol and source hashes match.
+
+## Experiments and version history
+
+The default `main` branch contains both completed experiments. Each keeps its own results and model artifacts. The default `python -m diabetes_ml.predict` command still uses Experiment 1's validation-selected MLP; Experiment 2 is available through `python -m diabetes_ml.v2_predict`.
+
+| Experiment | Evaluation and findings | Saved evidence |
+|---|---|---|
+| 1 | Held-out test: weighted MLP macro F1 **0.4675**, versus **0.4128** for the baseline MLP | [Report](results/REPORT.md), `models/`, `results/` |
+| 2 | Nested development CV: mean macro F1 **0.4648**, versus **0.4621** for the fixed weighted MLP on the same outer folds; prediabetes remains difficult | [Report](experiments/v2/REPORT.md), `experiments/v2/` |
+
+These scores use different evaluation data and procedures, so they should not be ranked directly against one another. Integrating a completed experiment does not automatically promote its model to the default predictor.
+
+- [`experiment-1`](https://github.com/NewOsakA/diabetes-ml/tree/experiment-1) preserves the project before Experiment 2 was integrated.
+- [`experiment-2`](https://github.com/NewOsakA/diabetes-ml/tree/experiment-2) preserves the integrated project with both experiments.
+- Develop future experiments on short-lived branches, keep their evidence in separate folders, and merge completed, tested work into `main` through pull requests. Record useful negative results as well as improvements. Use a new tag for each completed milestone; do not move existing experiment tags.
 
 ## Contents
 
@@ -44,7 +59,10 @@ Diabetes ML/
 │   ├── train.py                    # Complete experiment and test freeze
 │   ├── predict.py                  # Batch inference with saved champion
 │   ├── plots.py                    # Scientific figures
-│   └── build_report.py             # Rebuild report/notebook from saved evidence
+│   ├── build_report.py             # Rebuild Experiment 1 report/notebook
+│   └── v2_*.py                     # Experiment 2 protocol, training, report, inference
+├── experiments/v2/                 # Experiment 2 report, notebook, metrics and models
+├── docs/wiki/                      # Beginner guide source and visual assets
 ├── notebooks/01_exploration_and_results.ipynb
 ├── models/                         # Saved scaler, all models, registry, manifest
 ├── results/
@@ -65,7 +83,7 @@ Diabetes ML/
 Clone the repository and set up the Python environment using the instructions below:
 
 ```bash
-git clone --branch experiment/robust-prediabetes https://github.com/NewOsakA/diabetes-ml.git
+git clone https://github.com/NewOsakA/diabetes-ml.git
 cd diabetes-ml
 ```
 
@@ -90,7 +108,7 @@ python3.12 -m venv .venv
 .venv/bin/python -m pip install --no-deps -e .
 ```
 
-For other platforms, install from `pyproject.toml` with `.venv/bin/python -m pip install -e '.[dev]'`; resolve any platform-specific package wheels and retain the resulting version record. Small numerical differences may occur across platforms or library versions.
+For other platforms, install from `pyproject.toml` with `.venv/bin/python -m pip install -e '.[dev,experiments]'`; resolve any platform-specific package wheels and retain the resulting version record. Small numerical differences may occur across platforms or library versions.
 
 Saved-model inference works immediately after installation. To run the two data-dependent integration tests or execute the analysis notebook, first download the dataset:
 
@@ -99,7 +117,7 @@ Saved-model inference works immediately after installation. To run the two data-
 .venv/bin/python -m pytest -q
 ```
 
-The original experiment has four core tests and two data-dependent integration tests. Without the raw dataset, those integration tests are skipped; downloading it enables all six original checks. The v2 branch adds tests for partition isolation, calibration, sampling, selection and model artifacts. Downloading the data does not retrain models or change saved test results.
+The original experiment has four core tests and two data-dependent integration tests. Without the raw dataset, those integration tests are skipped; downloading it enables all six original checks. Experiment 2 adds tests for partition isolation, calibration, sampling, selection and model artifacts. Downloading the data does not retrain models or change saved test results.
 
 ## Run the experiment
 

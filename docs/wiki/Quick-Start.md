@@ -7,11 +7,11 @@
 Have Python 3.12 and Git available first. Open a terminal in the folder where you want to keep the project.
 
 ```bash
-git clone --branch experiment/robust-prediabetes https://github.com/NewOsakA/diabetes-ml.git
+git clone https://github.com/NewOsakA/diabetes-ml.git
 cd diabetes-ml
 ```
 
-This selects the branch containing both experiments. The default `main` branch contains Experiment 1 only.
+The default `main` branch contains both completed experiments, with separate reports and saved models. No branch switch is needed.
 
 ## 2. Create an isolated Python environment
 
