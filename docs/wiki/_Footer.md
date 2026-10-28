@@ -1,0 +1,1 @@
+**Diabetes ML** · Educational research on reported survey status · [Home](Home) · [Dataset source](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset) · [Code](https://github.com/NewOsakA/diabetes-ml) · Results do not establish clinical diagnostic reliability.

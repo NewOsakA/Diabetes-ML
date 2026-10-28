@@ -1,5 +1,7 @@
 # Diabetes ML
 
+**New to the project? [Read the visual, beginner-friendly wiki](https://github.com/NewOsakA/diabetes-ml/wiki).** It explains the data, training methods, metrics, both experiments, and how to run the code.
+
 A machine learning study of diabetes status using Alex Teboul's BRFSS 2015 Diabetes Health Indicators dataset. The project investigates class imbalance through weighted neural networks, focal loss, boosted trees, multiclass decision tuning and soft voting, with model selection based on macro F1.
 
 **Start with [the experiment report](results/REPORT.md)** or open the [executed notebook](notebooks/01_exploration_and_results.ipynb).
